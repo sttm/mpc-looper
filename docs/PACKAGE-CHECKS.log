@@ -1,0 +1,276 @@
+python3 tools/make_skin.py
+Generated physical-material four-loop UI: /work/plugins/MPC Looper Disk/skins
+./build/host_sim build/native/mpc-looper.so dump > build/params.json
+python3 tools/package.py
+Validating /work/plugins/MPC Looper Disk/build/sttm - VST - MPC Looper
+OK     plugin.json: MPC Looper by sttm (effect, uid SnYq)
+OK     folder name "sttm - VST - MPC Looper"
+OK     file32: mpc-looper-arm32.so is a 32-bit ARM shared object
+OK     file32: needed libraries: libm.so.6, libc.so.6, ld-linux-armhf.so.3
+OK     file32: max GLIBC requirement 2.36
+OK     file32: exports VSTPluginMain
+OK     file64: mpc-looper-arm64.so is a 64-bit AArch64 shared object
+OK     file64: needed libraries: libm.so.6, libc.so.6
+OK     file64: max GLIBC requirement 2.36
+OK     file64: exports VSTPluginMain
+OK     uid matches the binary (SnYq)
+OK     name matches the binary (MPC Looper)
+OK     manufacturer matches the binary (sttm)
+OK     kind matches the binary (effect)
+OK     numInputs matches the binary (2)
+OK     numOutputs matches the binary (2)
+OK     TUI.json: all parameter handles are within 0..93
+OK     TUI.json: image allplay_off.png present
+OK     TUI.json: image allplay_on.png present
+OK     TUI.json: image allstop_off.png present
+OK     TUI.json: image allstop_on.png present
+OK     TUI.json: image clear0_off.png present
+OK     TUI.json: image clear0_on.png present
+OK     TUI.json: image clear1_off.png present
+OK     TUI.json: image clear1_on.png present
+OK     TUI.json: image clear2_off.png present
+OK     TUI.json: image clear2_on.png present
+OK     TUI.json: image clear3_off.png present
+OK     TUI.json: image clear3_on.png present
+OK     TUI.json: image control.png present
+OK     TUI.json: image control_select0_off.png present
+OK     TUI.json: image control_select0_on.png present
+OK     TUI.json: image control_select1_off.png present
+OK     TUI.json: image control_select1_on.png present
+OK     TUI.json: image control_select2_off.png present
+OK     TUI.json: image control_select2_on.png present
+OK     TUI.json: image control_select3_off.png present
+OK     TUI.json: image control_select3_on.png present
+OK     TUI.json: image currenttempo_off.png present
+OK     TUI.json: image currenttempo_on.png present
+OK     TUI.json: image export0_off.png present
+OK     TUI.json: image export0_on.png present
+OK     TUI.json: image export1_off.png present
+OK     TUI.json: image export1_on.png present
+OK     TUI.json: image export2_off.png present
+OK     TUI.json: image export2_on.png present
+OK     TUI.json: image export3_off.png present
+OK     TUI.json: image export3_on.png present
+OK     TUI.json: image exportall_off.png present
+OK     TUI.json: image exportall_on.png present
+OK     TUI.json: image fader.png present
+OK     TUI.json: image fadermax0_off.png present
+OK     TUI.json: image fadermax0_on.png present
+OK     TUI.json: image fadermax6_off.png present
+OK     TUI.json: image fadermax6_on.png present
+OK     TUI.json: image file_exportall_off.png present
+OK     TUI.json: image file_exportall_on.png present
+OK     TUI.json: image file_restore_off.png present
+OK     TUI.json: image file_restore_on.png present
+OK     TUI.json: image file_save_off.png present
+OK     TUI.json: image file_save_on.png present
+OK     TUI.json: image files.png present
+OK     TUI.json: image group.png present
+OK     TUI.json: image group_loop0_off.png present
+OK     TUI.json: image group_loop0_on.png present
+OK     TUI.json: image group_loop1_off.png present
+OK     TUI.json: image group_loop1_on.png present
+OK     TUI.json: image group_loop2_off.png present
+OK     TUI.json: image group_loop2_on.png present
+OK     TUI.json: image group_loop3_off.png present
+OK     TUI.json: image group_loop3_on.png present
+OK     TUI.json: image group_play_off.png present
+OK     TUI.json: image group_play_on.png present
+OK     TUI.json: image group_stop_off.png present
+OK     TUI.json: image group_stop_on.png present
+OK     TUI.json: image len0_0_off.png present
+OK     TUI.json: image len0_0_on.png present
+OK     TUI.json: image len0_1_off.png present
+OK     TUI.json: image len0_1_on.png present
+OK     TUI.json: image len0_2_off.png present
+OK     TUI.json: image len0_2_on.png present
+OK     TUI.json: image len0_3_off.png present
+OK     TUI.json: image len0_3_on.png present
+OK     TUI.json: image len0_4_off.png present
+OK     TUI.json: image len0_4_on.png present
+OK     TUI.json: image len0_5_off.png present
+OK     TUI.json: image len0_5_on.png present
+OK     TUI.json: image len0_6_off.png present
+OK     TUI.json: image len0_6_on.png present
+OK     TUI.json: image len1_0_off.png present
+OK     TUI.json: image len1_0_on.png present
+OK     TUI.json: image len1_1_off.png present
+OK     TUI.json: image len1_1_on.png present
+OK     TUI.json: image len1_2_off.png present
+OK     TUI.json: image len1_2_on.png present
+OK     TUI.json: image len1_3_off.png present
+OK     TUI.json: image len1_3_on.png present
+OK     TUI.json: image len1_4_off.png present
+OK     TUI.json: image len1_4_on.png present
+OK     TUI.json: image len1_5_off.png present
+OK     TUI.json: image len1_5_on.png present
+OK     TUI.json: image len1_6_off.png present
+OK     TUI.json: image len1_6_on.png present
+OK     TUI.json: image len2_0_off.png present
+OK     TUI.json: image len2_0_on.png present
+OK     TUI.json: image len2_1_off.png present
+OK     TUI.json: image len2_1_on.png present
+OK     TUI.json: image len2_2_off.png present
+OK     TUI.json: image len2_2_on.png present
+OK     TUI.json: image len2_3_off.png present
+OK     TUI.json: image len2_3_on.png present
+OK     TUI.json: image len2_4_off.png present
+OK     TUI.json: image len2_4_on.png present
+OK     TUI.json: image len2_5_off.png present
+OK     TUI.json: image len2_5_on.png present
+OK     TUI.json: image len2_6_off.png present
+OK     TUI.json: image len2_6_on.png present
+OK     TUI.json: image len3_0_off.png present
+OK     TUI.json: image len3_0_on.png present
+OK     TUI.json: image len3_1_off.png present
+OK     TUI.json: image len3_1_on.png present
+OK     TUI.json: image len3_2_off.png present
+OK     TUI.json: image len3_2_on.png present
+OK     TUI.json: image len3_3_off.png present
+OK     TUI.json: image len3_3_on.png present
+OK     TUI.json: image len3_4_off.png present
+OK     TUI.json: image len3_4_on.png present
+OK     TUI.json: image len3_5_off.png present
+OK     TUI.json: image len3_5_on.png present
+OK     TUI.json: image len3_6_off.png present
+OK     TUI.json: image len3_6_on.png present
+OK     TUI.json: image level.png present
+OK     TUI.json: image main.png present
+OK     TUI.json: image monitoroff_off.png present
+OK     TUI.json: image monitoroff_on.png present
+OK     TUI.json: image monitoron_off.png present
+OK     TUI.json: image monitoron_on.png present
+OK     TUI.json: image multi0_off.png present
+OK     TUI.json: image multi0_on.png present
+OK     TUI.json: image multi1_off.png present
+OK     TUI.json: image multi1_on.png present
+OK     TUI.json: image multi2_off.png present
+OK     TUI.json: image multi2_on.png present
+OK     TUI.json: image multi3_off.png present
+OK     TUI.json: image multi3_on.png present
+OK     TUI.json: image next_loop_off.png present
+OK     TUI.json: image next_loop_on.png present
+OK     TUI.json: image original_off.png present
+OK     TUI.json: image original_on.png present
+OK     TUI.json: image pedal.png present
+OK     TUI.json: image pedal_off.png present
+OK     TUI.json: image pedal_on.png present
+OK     TUI.json: image playback.png present
+OK     TUI.json: image progress.png present
+OK     TUI.json: image quant0_off.png present
+OK     TUI.json: image quant0_on.png present
+OK     TUI.json: image quant1_off.png present
+OK     TUI.json: image quant1_on.png present
+OK     TUI.json: image quant2_off.png present
+OK     TUI.json: image quant2_on.png present
+OK     TUI.json: image rec_dub0_off.png present
+OK     TUI.json: image rec_dub0_on.png present
+OK     TUI.json: image rec_dub1_off.png present
+OK     TUI.json: image rec_dub1_on.png present
+OK     TUI.json: image rec_dub2_off.png present
+OK     TUI.json: image rec_dub2_on.png present
+OK     TUI.json: image rec_dub3_off.png present
+OK     TUI.json: image rec_dub3_on.png present
+OK     TUI.json: image rec_play0_off.png present
+OK     TUI.json: image rec_play0_on.png present
+OK     TUI.json: image rec_play1_off.png present
+OK     TUI.json: image rec_play1_on.png present
+OK     TUI.json: image rec_play2_off.png present
+OK     TUI.json: image rec_play2_on.png present
+OK     TUI.json: image rec_play3_off.png present
+OK     TUI.json: image rec_play3_on.png present
+OK     TUI.json: image record_selected_off.png present
+OK     TUI.json: image record_selected_on.png present
+OK     TUI.json: image restart_loops_off.png present
+OK     TUI.json: image restart_loops_on.png present
+OK     TUI.json: image resume_measure_off.png present
+OK     TUI.json: image resume_measure_on.png present
+OK     TUI.json: image resume_phase_off.png present
+OK     TUI.json: image resume_phase_on.png present
+OK     TUI.json: image save_off.png present
+OK     TUI.json: image save_on.png present
+OK     TUI.json: image select0_off.png present
+OK     TUI.json: image select0_on.png present
+OK     TUI.json: image select1_off.png present
+OK     TUI.json: image select1_on.png present
+OK     TUI.json: image select2_off.png present
+OK     TUI.json: image select2_on.png present
+OK     TUI.json: image select3_off.png present
+OK     TUI.json: image select3_on.png present
+OK     TUI.json: image setup.png present
+OK     TUI.json: image single0_off.png present
+OK     TUI.json: image single0_on.png present
+OK     TUI.json: image single1_off.png present
+OK     TUI.json: image single1_on.png present
+OK     TUI.json: image single2_off.png present
+OK     TUI.json: image single2_on.png present
+OK     TUI.json: image single3_off.png present
+OK     TUI.json: image single3_on.png present
+OK     TUI.json: image states.png present
+OK     TUI.json: image stop0_off.png present
+OK     TUI.json: image stop0_on.png present
+OK     TUI.json: image stop1_off.png present
+OK     TUI.json: image stop1_on.png present
+OK     TUI.json: image stop2_off.png present
+OK     TUI.json: image stop2_on.png present
+OK     TUI.json: image stop3_off.png present
+OK     TUI.json: image stop3_on.png present
+OK     TUI.json: image stop_mode0_0_off.png present
+OK     TUI.json: image stop_mode0_0_on.png present
+OK     TUI.json: image stop_mode0_1_off.png present
+OK     TUI.json: image stop_mode0_1_on.png present
+OK     TUI.json: image stop_mode0_2_off.png present
+OK     TUI.json: image stop_mode0_2_on.png present
+OK     TUI.json: image stop_mode1_0_off.png present
+OK     TUI.json: image stop_mode1_0_on.png present
+OK     TUI.json: image stop_mode1_1_off.png present
+OK     TUI.json: image stop_mode1_1_on.png present
+OK     TUI.json: image stop_mode1_2_off.png present
+OK     TUI.json: image stop_mode1_2_on.png present
+OK     TUI.json: image stop_mode2_0_off.png present
+OK     TUI.json: image stop_mode2_0_on.png present
+OK     TUI.json: image stop_mode2_1_off.png present
+OK     TUI.json: image stop_mode2_1_on.png present
+OK     TUI.json: image stop_mode2_2_off.png present
+OK     TUI.json: image stop_mode2_2_on.png present
+OK     TUI.json: image stop_mode3_0_off.png present
+OK     TUI.json: image stop_mode3_0_on.png present
+OK     TUI.json: image stop_mode3_1_off.png present
+OK     TUI.json: image stop_mode3_1_on.png present
+OK     TUI.json: image stop_mode3_2_off.png present
+OK     TUI.json: image stop_mode3_2_on.png present
+OK     TUI.json: image sync_off.png present
+OK     TUI.json: image sync_off0_off.png present
+OK     TUI.json: image sync_off0_on.png present
+OK     TUI.json: image sync_off1_off.png present
+OK     TUI.json: image sync_off1_on.png present
+OK     TUI.json: image sync_off2_off.png present
+OK     TUI.json: image sync_off2_on.png present
+OK     TUI.json: image sync_off3_off.png present
+OK     TUI.json: image sync_off3_on.png present
+OK     TUI.json: image sync_on.png present
+OK     TUI.json: image sync_on0_off.png present
+OK     TUI.json: image sync_on0_on.png present
+OK     TUI.json: image sync_on1_off.png present
+OK     TUI.json: image sync_on1_on.png present
+OK     TUI.json: image sync_on2_off.png present
+OK     TUI.json: image sync_on2_on.png present
+OK     TUI.json: image sync_on3_off.png present
+OK     TUI.json: image sync_on3_on.png present
+OK     TUI.json: image undo0_off.png present
+OK     TUI.json: image undo0_on.png present
+OK     TUI.json: image undo1_off.png present
+OK     TUI.json: image undo1_on.png present
+OK     TUI.json: image undo2_off.png present
+OK     TUI.json: image undo2_on.png present
+OK     TUI.json: image undo3_off.png present
+OK     TUI.json: image undo3_on.png present
+OK     TUI.json: image warp_off.png present
+OK     TUI.json: image warp_on.png present
+OK     TUI.json: 6 tabs
+OK     Q-Links.json: 6 tab maps, all values in range
+OK     version.xml uiversion 0.1.0.0
+OK     Content/: 0 files, 0.0 MB (loaded by the plugin at run time, see framework/mpc_resources.h)
+0 errors, 0 warnings
+Package: /work/plugins/MPC Looper Disk/dist/mpc-looper-0.6.1-mpc.zip
+SHA256: 191461393af01ce09d47caea011ff46fb956b150f570134ac8c4c17f8c8192ca

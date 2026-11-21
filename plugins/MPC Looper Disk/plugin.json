@@ -1,0 +1,18 @@
+{
+  "name": "MPC Looper",
+  "manufacturer": "sttm",
+  "version": "0.6.1",
+  "format": "vst2",
+  "kind": "effect",
+  "uid": "SnYq",
+  "numInputs": 2,
+  "numOutputs": 2,
+  "category": "Effect",
+  "file32": "VST/mpc-looper-arm32.so",
+  "file64": "VST/mpc-looper-arm64.so",
+  "description": "Four independent disk-streaming loops, tempo sync, Warp, versioned undo and streaming export.",
+  "author": "sttm",
+  "url": "https://github.com/sttm/mpc-looper",
+  "license": "MIT",
+  "id": "mpc-looper"
+}

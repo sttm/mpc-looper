@@ -1,0 +1,6 @@
+g++ -D_FILE_OFFSET_BITS=64 -std=c++17 -O2 -Wall -Wextra -Werror -pthread -isystem "../../vendor/mpc-plugin-builder-sdk/framework" -Isrc -isystem vendor/signalsmith-stretch -isystem vendor/signalsmith-linear/include -O1 -g -fsanitize=address,undefined tests/pedal_test.cpp -o build/pedal_sanitize
+./build/pedal_sanitize
+PASS REC>DUB>PLAY, REC>PLAY>DUB, immediate partial overdub, phase continuity, STOP/play, global clock freeze/resume, independent loop clock, stopped-move restart, single live-input writer, PHASE/free/MEASURE, SINGLE/MULTI, three stop timings; no audio allocations
+g++ -D_FILE_OFFSET_BITS=64 -std=c++17 -O2 -Wall -Wextra -Werror -pthread -isystem "../../vendor/mpc-plugin-builder-sdk/framework" -Isrc -isystem vendor/signalsmith-stretch -isystem vendor/signalsmith-linear/include -O1 -g -fsanitize=address,undefined tests/integration_test.cpp -o build/integration_sanitize
+MPC_PLUGIN_FOLDER="/work/plugins/MPC Looper Disk/build/sanitize-profile" ./build/integration_sanitize
+PASS proxy MIDI Learn parameters, selected capture/level, no audio-thread host notifications; real plugin in-place input, independent loops, audio chunk reload, individual WAV stems, session backup and restore

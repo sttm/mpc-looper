@@ -1,0 +1,6 @@
+PASS ZIP CRC and ARMv7/AArch64 binaries; 94 parameters; four-bar default; FADER MAX 0 dB default; orange Q-Link bank bounds retained; STOP 90x90; fader atlas 60x14400; no user audio in archives.
+
+42f1aeb82a210657fcc9c017d89e7338af24b3b55c0f3c28a2cc6824d38db762  MPC-Looper-0.6.1-mpc-aarch64.zip
+94646e8b350b148fdd8d33eb3bd1fa59404b15122ca2de55ec86da815507f9f2  MPC-Looper-0.6.1-mpc-armv7.zip
+eb0da72f91727fa340dd3adfabf63e204f5b5b2df596d68bd9e7b15e034c20c2  MPC-Looper-0.6.1-mpc-sdk.zip
+191461393af01ce09d47caea011ff46fb956b150f570134ac8c4c17f8c8192ca  mpc-looper-0.6.1-mpc.zip
