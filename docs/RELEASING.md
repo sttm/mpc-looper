@@ -28,5 +28,5 @@ and enable Enhancements and External Plugin Support in Preferences. The
 legacy scripted installer is optional and is not required for this route.
 `--user-data Content` protects existing recordings during catalog upgrades.
 
-Final 0.6.1 and Gen2 hardware testing is pending. Do not add tested.json
-until a tester reports that exact version, device, firmware and date.
+Version 0.6.1 now has an author-confirmed Key 61 / OS 3.10.1 record.
+Gen2 and later versions need their own exact-version hardware confirmation.

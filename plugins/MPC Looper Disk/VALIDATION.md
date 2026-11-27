@@ -1,6 +1,6 @@
 # MPC Looper 0.6.1 validation
 
-Experimental release for MPC OS 3.10.1+ with External Plugin Support.
+Release for MPC OS 3.10.1+ with External Plugin Support.
 Same MPC Looper / sttm / SnYq identity. First 76 parameter IDs/order unchanged.
 New indices: Loop Sync 76..79 (ON), Play Mode 80..83 (MULTI), Resume 84 (PHASE),
 Stop Timing 85..88 (IMMEDIATE). Q-Link bank roles remain level/length/REC ACTION; level now maps to 90..93.
@@ -41,8 +41,9 @@ The final host simulation passed 20 checks with 0 warnings and 0 failures.
 Parameter restore and restored audio are checked independently.
 
 Preserve the ENTIRE Content folder and test a copy of an MPC project. Looper is
-experimental; the final 0.6.1 changes and Gen2 remain offline-only.
-No tested.json verification record is submitted for this version.
+validated on MPC Key 61 / OS 3.10.1 for recording, overdub and project
+save/reload (author confirmation, 2026-11-27). Gen2 remains offline-only.
+The root tested.json records only this 0.6.1 / Key 61 confirmation.
 
 Behavior reference: Roland RC-505mkII Parameter Guide, pages 2-4:
 https://static.roland.com/assets/media/pdf/RC-505mk2_Parameter_eng04_W.pdf

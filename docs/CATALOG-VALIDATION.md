@@ -1,8 +1,9 @@
 # MPC Looper 0.6.1 release validation — 2026-11-21
 
-Final source and Gen2 hardware validation: **offline only**. Earlier Looper
-iterations were exercised on MPC Key 61 / OS 3.10.1; this is not a final-version
-verified record or a CPU guarantee for a 2 GB device. No tested.json is submitted.
+Hardware update 2026-11-27: the author confirmed 0.6.1 recording, overdub
+and project save/reload on MPC Key 61 / OS 3.10.1. Root tested.json records
+that version/device. Gen2 remains offline-only. This is not a numerical CPU,
+latency or 2 GB compatibility measurement. See HARDWARE-TEST-0.6.1.md.
 
 - Clean Linux/amd64 Docker build from the standalone source: native, ARMv7
   hard-float and AArch64; all ordinary engine tests and real VST host simulation

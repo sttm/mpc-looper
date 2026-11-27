@@ -1,11 +1,22 @@
-# MPC Looper 0.6.1 — experimental disk streaming
+# MPC Looper 0.6.1
 
-Native stereo VST2 insert for MPC OS 3.10.1+, ARMv7 (Gen1) and AArch64 (Gen2).
-Four independent loops, pedal-style REC/DUB/PLAY, global transport pause,
-Sync Tempo/Warp, undo and individual/all-loop WAV export. UID **SnYq**.
-Designed for bounded audio-cache memory on 2 GB MPCs; physical MPC One validation is still required.
+A four-loop stereo looper for live performance and production on MPC Standalone.
+Record on the MPC beat/bar grid, build layers with overdub, and take each loop
+into your arrangement as a separate WAV.
 
-**Experimental release. Keep a separate copy of your MPC project and the entire plugin Content folder before updating. New disk-reference states cannot be reopened by the earlier in-memory 0.3.1 build. The final 0.6.1 revision and Gen2 are offline-only; no hardware CPU or MPC One compatibility certification is claimed.**
+- **Grid-synced recording:** Off / Beat / Bar quantization; Free or 1, 2, 4, 8,
+  16 and 32 bars, with 4 bars selected by default.
+- **Tempo control:** Sync Tempo follows the MPC BPM; Warp preserves pitch.
+- **Live performance:** four independent loops, REC/OVERDUB/PLAY operation,
+  undo/redo, grouped launch/stop, PHASE/MEASURE launch and per-loop stop timing.
+- **Production:** individual or all-loop separate stereo PCM24 WAV exports.
+- **Bounded audio caches:** 16 MiB for four loops; audio sources stream from
+  the plugin drive. Warp, UI and other allocations add memory.
+
+MPC OS **3.10.1+** with External Plugin Support. Gen1 ARMv7 and Gen2 AArch64
+builds are provided. **Version 0.6.1 tested on MPC Key 61 / MPC OS 3.10.1:**
+recording, overdub and project save/reload, confirmed by the author on
+2026-11-27. Gen2 and 2 GB MPC One hardware validation remain pending.
 
 ## Install
 
@@ -176,6 +187,16 @@ Warp has a short priming/crossfade transition at start/source change; PRIMING is
 shown in SETUP. Dry monitoring has no added Warp latency. Transients, seams and
 extreme ratios need listening tests; start around 0.75–1.5 times capture BPM and
 one or two playing loops. No commercial DAW Warp equivalence is claimed. See TEMPO-DESIGN.md.
+
+## Latency and recording alignment
+
+The plugin reports zero added VST latency. Dry input monitoring is passed
+through at the same sample position; Warp does not delay the dry monitor.
+Known loop audio uses circular look-ahead and preroll for the stretcher.
+This does not measure or cancel hardware input/output latency, upstream effect
+latency, or monitoring delay. No automatic hardware round-trip calibration
+or manual recording-offset control is currently implemented. Loop transient
+alignment and external-input loopback measurements are 1.0 acceptance work.
 
 ## Q-Link and host MIDI Learn
 
